@@ -2,7 +2,6 @@ package com.kennyscott.maventest.controller;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,7 +24,7 @@ public class MyController {
 	@RequestMapping(value = "/hey", method = RequestMethod.GET)
 	public String handle() {
 		LOG.warn("Some random warning");
-		return "/resources/html/hello.html";
+		return "/html/hello.html";
 	}
 
 	@RequestMapping(value = "/heyJson", method = RequestMethod.GET)
