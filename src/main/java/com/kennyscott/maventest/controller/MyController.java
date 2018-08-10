@@ -22,12 +22,6 @@ public class MyController {
 
 	final static Logger LOG = Logger.getLogger(MyController.class);
 
-	@RequestMapping(value = "/hey", method = RequestMethod.GET)
-	public String handle() {
-		LOG.warn("Some random warning");
-		return "/resources/html/hello.html";
-	}
-
 	@RequestMapping(value = "/heyJson", method = RequestMethod.GET)
 	@ResponseBody
 	public String fnarr() {
